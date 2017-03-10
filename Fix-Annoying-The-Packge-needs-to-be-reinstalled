@@ -1,0 +1,27 @@
+# Fix-Annoying-The-Packge-needs-to-be-reinstalled
+
+Here’s how to fix annoying ‘The package <package name> needs to be reinstalled, but I can’t find an archive for it’   
+If a package installation has been unsuccessful, you may see the following error that will prevent you from installing other packages –
+‘The package <package name> needs to be reinstalled, but I can’t find an archive for it’   
+
+First, make a backup of the dpkg status file
+```sh
+sudo cp /var/lib/dpkg/status status.bkp
+```
+the
+```sh
+sudo gedit /var/lib/dpkg/status
+```
+Search for corrupt packet by looking for "reinstreq half-installed"   
+then delete all package information   
+
+Sometime you need to re-add /etc/apt/sources.list
+```sh
+###### Ubuntu Main Repos
+deb http://th.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse 
+deb-src http://th.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse 
+```
+### Original sources   
+
+#### [http://www.ihaveapc.com/](http://www.ihaveapc.com/2011/10/fix-annoying-the-package-needs-to-be-reinstalled-but-i-cant-find-an-archive-for-it-error-in-linux-mint-ubuntu/)
+#### [https://repogen.simplylinux.ch/](https://repogen.simplylinux.ch/)
