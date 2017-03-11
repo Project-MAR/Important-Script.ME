@@ -41,5 +41,10 @@ network={
     psk="Your_wifi_password"
 }
 ```
+if hidden network, add 
+```sh
+scan_ssid=1
+```
 
 ---
+
