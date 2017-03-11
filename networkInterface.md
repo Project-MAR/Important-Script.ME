@@ -41,10 +41,11 @@ network={
     psk="Your_wifi_password"
 }
 ```
-if hidden network, add 
+If a hidden network, add 
 ```sh
 scan_ssid=1
 ```
 
 ---
 
+read more from [raspberry.org](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) 
