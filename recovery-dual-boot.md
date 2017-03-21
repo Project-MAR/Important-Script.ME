@@ -49,3 +49,6 @@ Then run
 ```sh
 grub-mkconfig
 ```
+
+#### Original from
+[dareneiri.github.io](http://dareneiri.github.io/Configuring-Grub-2-on-CentOS-7/)
