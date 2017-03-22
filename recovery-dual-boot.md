@@ -36,7 +36,7 @@ cd  /etc/grub.d/
 sudo nano 40_custom
 ```
 
-Add
+At the last line, Add this. MASE SURE YOU USE RIGHT (x,y) where x is disk and y is partition
 
 ```sh
 menuentry "Windows 7" {
