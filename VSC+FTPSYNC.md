@@ -34,8 +34,8 @@ If FTP Server run correctly, we can proceed next step.
 ---
 
 #### Setup ftp-sync in Visual Studio Code
- - Install plunig
- - open cmd line (F1) then type "ftp-sync init:"
+ - Install plug-in
+ - open cmd line (press F1) then type "ftp-sync init:"
  - ftp-sync.json should be open
  - edit that file
  
@@ -62,6 +62,6 @@ If FTP Server run correctly, we can proceed next step.
  ```
  ---
    
-#### It will be sync automatically every times after you save files.
+### It will be sync automatically every times after you save files.
 ### Enjoy :)
  
