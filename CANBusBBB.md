@@ -9,9 +9,10 @@
 ```
 
 ```sh
-sudo ip link set can1 up type can bitrate 500000
+sudo ip link set can1 up type can bitrate 500000 loopback on
 sudo ifconfig can1 up
 ```
+> if no option: loopback on, candump will not receive any message
 
 ```sh
 debian@beaglebone:~# ifconfig
