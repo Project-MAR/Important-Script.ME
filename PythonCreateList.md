@@ -12,7 +12,7 @@ with open('testFile1.txt' , 'r') as f:
     CanoeLogList = [line[0:len(line) - 1] for line in f if 'Apple' in line]
 ```
 
-### Decode UTF-16-LE + Split each line into list
+#### Decode UTF-16-LE + Split each line into list
 ```python
         with open(testFile , 'rb') as f:
             text = f.read().decode('utf-16-le')
