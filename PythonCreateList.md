@@ -17,5 +17,5 @@ with open('testFile1.txt' , 'r') as f:
         with open(testFile , 'rb') as f:
             text = f.read().decode('utf-16-le')
         
-        self.testFileList = [line for line in text.split('\r\n')]
+        testFileList = [line for line in text.split('\r\n')]
 ```
